@@ -4,9 +4,9 @@
 TIMEOUTCOMMAND="gtimeout"		# timeout operation ** set command to "timeout" for linux and "gtimeout" for mac
 TIMEOUT=3600					# timeout time for programs
 CP="$(CLASSPATH):../ -XX:+UseSerialGC -Xmx3G"			# java classpath
-# PREPATH="./examples/DM_pg91/"	# location of the example to solve
+PREPATH="./examples/DM_pg91/"	# location of the example to solve
 # PREPATH="./examples/DG_RI_pg12/"
-PREPATH="./examples/DG_RI_pg22/"
+# PREPATH="./examples/DG_RI_pg22/"
 
 # variables used by other programs (don't change unless necessary)
 INSTANCE="example.txt"
