@@ -1,0 +1,30 @@
+Correctness_tests: Date: 2020/1/28  Time: 10:47:35
+
+
+# Regret-equal degree_iteration algorithm results
+REDI_Alg_passedAcceptability: true
+REDI_Alg_passedCapacity: true
+REDI_Alg_passedStability: true
+REDI_Alg_correctness_pass: true
+REDI_Alg_REscore: 0
+
+# Regret-equal stable_pair algorithm results
+RESP_Alg_passedAcceptability: true
+RESP_Alg_passedCapacity: true
+RESP_Alg_passedStability: true
+RESP_Alg_correctness_pass: true
+RESP_Alg_REscore: 0
+
+# Enumeration algorithm results
+ENUM_Alg_numStableMatchings: 10
+ENUM_Alg_numPassedAcceptability: 10
+ENUM_Alg_numPassedCapacity: 10
+ENUM_Alg_numPassedStability: 10
+ENUM_Alg_correctness_pass: true
+ENUM_Alg_REscore: 0
+
+# General results
+REscoreMatch: true
+
+exitCode 0
+code/correctness/Main_Tester completed

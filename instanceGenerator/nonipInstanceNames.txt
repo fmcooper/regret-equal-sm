@@ -1,0 +1,15 @@
+./Evaluations/S10/Instances/10-10-10-0_0.txt
+./Evaluations/S10/Instances/10-10-10-0_1.txt
+./Evaluations/S10/Instances/10-10-10-0_2.txt
+./Evaluations/S10/Instances/10-10-10-0_3.txt
+./Evaluations/S10/Instances/10-10-10-0_4.txt
+./Evaluations/S20/Instances/20-20-20-0_0.txt
+./Evaluations/S20/Instances/20-20-20-0_1.txt
+./Evaluations/S20/Instances/20-20-20-0_2.txt
+./Evaluations/S20/Instances/20-20-20-0_3.txt
+./Evaluations/S20/Instances/20-20-20-0_4.txt
+./Evaluations/S30/Instances/30-30-30-0_0.txt
+./Evaluations/S30/Instances/30-30-30-0_1.txt
+./Evaluations/S30/Instances/30-30-30-0_2.txt
+./Evaluations/S30/Instances/30-30-30-0_3.txt
+./Evaluations/S30/Instances/30-30-30-0_4.txt
