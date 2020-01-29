@@ -74,7 +74,7 @@ Notes
 * There are several variables that may be changed in this script including the timeout command, timeout time, java classpath and location of the example. For more information please see the script.
 * If you get CPLEX errors at this point then you will need to check you have followed all installation instructions above. Also ensure that your path variables have been correctly exported by running "$ echo $PATH" etc. 
 * If you wish to run algorithms separately, please see the script for an example of how they are called.
-* If you want to run the IP correctness testing, please un-comment out this section of the script.
+* If you want to run the IP correctness testing, please un-comment this section of the script.
 
 
 ******************************
@@ -86,7 +86,7 @@ Once the above example has been run, there will be four results files created in
 * re_degree_iteration_algorithm.txt: This is the results file for Algorithm REDI. It comprises the output stable matching, various measures associated with the matching and algorithm statistics.
 * re_stable_pair_algorithm.txt: This is the results file for Algorithm RESP. It comprises the output stable matching, various measures associated with the matching and algorithm statistics.
 * enumeration_algorithm.txt: This is the results file for Algorithm ENUM. This file lists and gives statistics on all rotations and stable matchings of the instance. The index of stable matching for the rank-maximal, generous, sex_equal, egalitarian, median, balanced, minimum regret, min-regret sum and regret-equal stable matchings are given, and well as the digraph, simple digraph, simple reverse digraph and algorithm statistics.
-* correctness.txt: This file gives correctness results for Algorithms REDI, RESP and ENUM. For Algorithms REDI and RESP, correctness checks for the output stable matching and the regret-equality score for this matching are given. For Algorithm ENUM, the number of stable matchings found by the algorithm is displayed, as well as the number that have passed different correctness tests. The regret-equality score of the regret-equal stable matching is also given in this case. At the end of the file, a boolean indicates whether the regret-equality score of all algorithms match. If using the IP correctness testing, it will also have a list of all stable matchings found by the IP as well as statistics on the IP's performance.
+* correctness.txt: This file gives correctness results for Algorithms REDI, RESP and ENUM. For Algorithms REDI and RESP, correctness checks for the output stable matching are given and the regret-equality score is displayed. For Algorithm ENUM, the number of stable matchings found by the algorithm is displayed, as well as the number that have passed different correctness tests. The regret-equality score of the regret-equal stable matching is also displayed here. At the end of the file, a boolean indicates whether the regret-equality score of all algorithms match. If using the IP correctness testing, it will also have a list of all stable matchings found by the IP as well as statistics on the IP's performance.
 
 
 
@@ -101,7 +101,7 @@ The file "userOptions.txt" lists all instances to be created and run over. The s
 experimentName <numMen>-<minPrefListLength>-<maxPrefListLength>-<skew> <numInstances> <c/nc (correctness testing tag)>
 ```
 
-As an example, the following line would indicate that we want to create an experiment "S10", with 1000 instances, 10 men, 10 women, preference lists of length 10 and a uniform distribution. It also shows that we want to run IP correctness testing on these instances. Please note that for these algorithms SM instances are expected and so it is required that preference lists are complete.
+As an example, the following line would indicate that we want to create an experiment "S10", with 1000 instances, 10 men, 10 women, preference lists of length 10 and a uniform distribution over preference lists. It also shows that we want to run IP correctness testing on these instances. Please note that for these algorithms SM instances are expected and so it is required that preference lists are complete.
 
 ```
 S10 10-10-10-0 1000 c
@@ -130,15 +130,15 @@ This will compile, generate instances and run instances through all the required
 * ".../Evaluations/exp/EnumerationAlgorithm/x.txt"
 * ".../Evaluations/exp/Correctness/x.txt"
 
-Summaries of all experiments can be found in the "stats/results" directory, particularly the correctness.txt shows a correctness testing summary, and the collected_results.txt shows a statistical information summary. Other files in this directory include tables and plots.
+Summaries of all experiments can be found in the "stats/results" directory, particularly the "correctness.txt" file shows a correctness testing summary, and the "collected_results.txt" file shows the statistical information summary used by "stats/stats.py" to create plots and tables. Other files in this directory include plots and tables.
 
 If you are on linux, open the "runExperiments.sh" file and change the timeout command from "gtimeout" to "timeout". Then proceed as above.
 
 Notes
 * There are several variables that may be changed in this script including the timeout command, timeout time, correctness timeout time, location of results, java classpath, java garbage collection options, java heap space per operation and number of jobs to run simultaneously. For more information please see the script. Currently, the number of jobs to run simultaneously and the java heap space are kept reasonably small. 
 * If you don't want to run the IP correctness testing, please comment out this section of the script.
-* If you change the timeout time and want to accurately gain statistical results on the time taken then you will also need to change the time out time in the "stats/stats.py" program.
-* Currently the small size of instances set to run in the "userOptions.txt" file means that the bar charts in the associated paper cannot be built. Should instances of size 100, 400, 700 and 1000 be processed these bar charts can again be created. This is done by changing the value of "histogram" in the file "stats/stats.py" to "true".
+* If you change the timeout time and want to accurately gain statistical results on the time taken then you will also need to change the timeout time in the "stats/stats.py" program.
+* Currently the small size of instances set to run in the "userOptions.txt" file means that the bar charts in the associated paper cannot be built. Should instances of size 100, 400, 700 and 1000 be processed these bar charts can again be created. This is done by changing the value of "histogram" in the program "stats/stats.py" to "true".
 
 ******************************
 
@@ -153,9 +153,9 @@ export -f createInstance
 cat $INSTANCESFILE | parallel $PARALLEL_OPTS createInstance {}
 ```
 
-in order to stop the instances being overwritten.
+in order to stop instances being overwritten.
 
-* Alter any "runExperiments.sh" as described in section 6.
+* Alter any of script "runExperiments.sh" as described in section 6.
 * Change the value of "histogram" in the file "stats/stats.py" to "true" and update varible "exp_name" from
 ```
 exp_names = ['S6', 'S8', 'S10', 'S20', 'S30']
@@ -166,12 +166,15 @@ exp_names = ['S6', 'S8', 'S10', 'S20', 'S30']
  ```
 * Java and Python configurations and the computer hardware used in the original experiments can be found in the associated paper.
 
+Notes
+* Should you wish to run only the statistical program ("stats/stats.py") over already collected results, move file "stats/results/output_2020_01/collected_results.txt" to directory "stats/results". The statistical program will now use these results as a basis for plots and tables.
+
 
 ******************************
 
 # 8) versions
 
-V1.0.1
+V1.0.0 initial version
 
 ******************************
 
