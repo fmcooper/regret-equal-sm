@@ -52,7 +52,7 @@ Algorithms for new types of fair stable matchings
 Authors: Frances Cooper and David Manlove
 
 * The paper is located at: 
-* The data is located at: 
+* The data is located at: [https://zenodo.org/record/3630349](https://zenodo.org/record/3630349)
 * The software is located at: 
 
 
