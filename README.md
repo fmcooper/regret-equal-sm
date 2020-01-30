@@ -51,9 +51,9 @@ Data and software information can be found in the following paper:
 Algorithms for new types of fair stable matchings
 Authors: Frances Cooper and David Manlove
 
-* The paper is located at: 
+* The paper is located at: [https://arxiv.org/abs/2001.10875](https://arxiv.org/abs/2001.10875)
+* The software is located at: [https://zenodo.org/record/3630383](https://zenodo.org/record/3630383)
 * The data is located at: [https://zenodo.org/record/3630349](https://zenodo.org/record/3630349)
-* The software is located at: 
 
 
 ******************************
