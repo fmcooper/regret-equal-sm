@@ -174,7 +174,11 @@ Notes
 
 # 8) versions
 
-V1.0.0 initial version
+V1.0 
+* initial version
+
+v1.1 
+* readme updated
 
 ******************************
 
