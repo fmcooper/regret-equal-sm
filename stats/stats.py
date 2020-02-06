@@ -81,7 +81,7 @@ def createPlots():
     # optimal measures plot
     ###############
     measures = ["degree", "egalCost", "sexEqualCost", "balancedScore", "regretEqualScore", "sumRegret"]
-    labels = ["Degree", "Egalitarian cost", "Sex-equal cost", "Balanced score", "Regret-equal score", "Sum regret"]
+    labels = ["Degree", "Egalitarian cost", "Sex-equal score", "Balanced score", "Regret-equal score", "Sum regret"]
     for measure, label in zip(measures, labels):
         minreg_stats_av, minreg_stats_median, minreg_stats_5, minreg_stats_95 = [], [], [], []
         egal_stats_av, egal_stats_median, egal_stats_5, egal_stats_95 = [], [], [], []
@@ -729,8 +729,8 @@ def createTables():
             'sumRegret']
         captions = [
             ' degree for six different optimal stable matchings and output from Algorithm REDI.', 
-            ' egalitarian cost for six different optimal stable matchings and output from Algorithm REDI.', 
-            ' sex-equal cost for six different optimal stable matchings and output from Algorithm REDI.', 
+            ' cost for six different optimal stable matchings and output from Algorithm REDI.', 
+            ' sex-equal score for six different optimal stable matchings and output from Algorithm REDI.', 
             ' regret-equality score for six different optimal stable matchings and output from Algorithm REDI.', 
             ' balanced score for six different optimal stable matchings and output from Algorithm REDI.', 
             ' regret sum for six different optimal stable matchings and output from Algorithm REDI.']
@@ -771,8 +771,8 @@ def createTables():
             'sumRegret']
         captions = [
             ' degree for six different optimal stable matchings and outputs from Algorithms REDI and RESP.', 
-            ' egalitarian cost for six different optimal stable matchings and outputs from Algorithms REDI and RESP.', 
-            ' sex-equal cost for six different optimal stable matchings and outputs from Algorithms REDI and RESP.', 
+            ' cost for six different optimal stable matchings and outputs from Algorithms REDI and RESP.', 
+            ' sex-equal score for six different optimal stable matchings and outputs from Algorithms REDI and RESP.', 
             ' regret-equality score for six different optimal stable matchings and output from Algorithms REDI and RESP.', 
             ' balanced score for six different optimal stable matchings and outputs from Algorithms REDI and RESP.', 
             ' regret sum for six different optimal stable matchings and outputs from Algorithms REDI and RESP.']
