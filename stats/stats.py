@@ -27,8 +27,9 @@ if paper_string == 'true':
     paper = True
 
 ################# variables
-# exp_names = ['S10', 'S20', 'S30', 'S40', 'S50', 'S60', 'S70', 'S80', 'S90', 'S100', 'S200', 'S300', 'S400', 'S500', 'S600', 'S700', 'S800', 'S900', 'S1000']
-exp_names = ['S6', 'S8', 'S10', 'S20', 'S30']
+exp_names = ['S10', 'S20', 'S30', 'S40', 'S50', 'S60', 'S70', 'S80', 'S90', 'S100', 'S200', 'S300', 'S400', 'S500', 'S600', 'S700', 'S800', 'S900', 'S1000']
+exp_names = ['S6', 'S8', 'S10']
+
  # set to true if required instance sizes are run
 histogram = False
 
@@ -320,6 +321,7 @@ def createDurationPlot(xlist, xlabel, ylabel, \
 
     
     plt.xlim(xmin=0, xmax=1000)
+    plt.ylim(ymin=100)
     plt.yscale('log')
     plt.grid()
 
@@ -450,7 +452,11 @@ def createPlot(name, xlabel, ylabel, xlist, \
     order = [4,2,0,5,3,1,6]
     if not paper:
         order = [4,2,0,5,3,1,6,7]
+    plt.xlim(xmin=0, xmax=1000)
+    plt.ylim(ymin=0)
     plt.grid()
+
+
     plt.legend([handles[idx] for idx in order],[labels[idx] for idx in order])
     # plt.legend()
     plt.tight_layout()
@@ -636,7 +642,7 @@ def createTables():
         latexPaperFile.write('\hline ')
 
         for exp in exp_names:
-            latexPaperFile.write('{} & ${}$ & ${}$ & ${}$ \\\\ \n '.format(\
+            latexPaperFile.write('{} & ${}$ & ${}$ \\\\ \n '.format(\
                 exp, d[exp+'numMenOrWomen'][0],
                 d[exp+'Av_numStableMatchings'][0], d[exp+'Av_numRotations'][0]))
 

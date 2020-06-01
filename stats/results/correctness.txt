@@ -1,10 +1,8 @@
-Correctness runthrough conducted at: 2020-01-28 12:20
+Correctness runthrough conducted at: 2020-06-01 10:36
 
-# experiment: S10	totalChecked: 5	total_reDegreeIter_timeout: 0	total_reStablePair_timeout: 0	totalRegEqEnum_timeout: 0	totalIPTimeout: 0	totalPassed: 5	totalFailed: 0	
-# experiment: S20	totalChecked: 5	total_reDegreeIter_timeout: 0	total_reStablePair_timeout: 0	totalRegEqEnum_timeout: 0	totalIPTimeout: 0	totalPassed: 5	totalFailed: 0	
+# experiment: S10	totalChecked: 10	total_reDegreeIter_timeout: 0	total_reStablePair_timeout: 0	totalRegEqEnum_timeout: 0	totalIPTimeout: 0	totalPassed: 10	totalFailed: 0	
 # experiment: S8	totalChecked: 10	total_reDegreeIter_timeout: 0	total_reStablePair_timeout: 0	totalRegEqEnum_timeout: 0	totalIPTimeout: 0	totalPassed: 10	totalFailed: 0	
 # experiment: S6	totalChecked: 10	total_reDegreeIter_timeout: 0	total_reStablePair_timeout: 0	totalRegEqEnum_timeout: 0	totalIPTimeout: 0	totalPassed: 10	totalFailed: 0	
-# experiment: S30	totalChecked: 5	total_reDegreeIter_timeout: 0	total_reStablePair_timeout: 0	totalRegEqEnum_timeout: 0	totalIPTimeout: 0	totalPassed: 5	totalFailed: 0	
 
 # errors: 
 
