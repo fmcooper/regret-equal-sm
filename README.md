@@ -180,6 +180,9 @@ V1.0
 v1.1 
 * readme updated
 
+v1.2
+* small change in naming conventions in plot generators
+
 ******************************
 
 This readme is based on a readme for a previous project found here: https://doi.org/10.5281/zenodo.1183221
