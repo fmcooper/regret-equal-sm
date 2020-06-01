@@ -183,6 +183,9 @@ v1.1
 v1.2
 * small change in naming conventions in plot generators
 
+v1.3
+* updates to plot and table generators
+
 ******************************
 
 This readme is based on a readme for a previous project found here: https://doi.org/10.5281/zenodo.1183221
