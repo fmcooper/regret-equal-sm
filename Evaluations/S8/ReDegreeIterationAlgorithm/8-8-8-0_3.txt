@@ -1,0 +1,26 @@
+Date: 2020/6/1  Time: 10:36:38
+
+// Regret Equal Degree Iteration Algorithm stats
+
+matching: 2 3 8 1 5 7 4 6 
+profileMen: 2 1 2 1 2 0 0 0 
+profileWomen: 3 3 0 1 1 0 0 0 
+profileCombined: 5 4 2 2 3 0 0 0 
+costMen: 24
+costWomen: 18
+egalitarianCost: 42
+sexEqualityCost: 6
+menDegree: 5
+womenDegree: 5
+degree: 5
+regretEqualScore: 0
+balancedScore: 24
+sumRegret: 10
+
+
+Duration_ModCreation_ms: 120
+Duration_Alg_ms: 14
+Duration_Total_ms: 137
+
+exitCode 0
+code/degree_iteration/Main_ReDegreeIterationAlgorithm completed

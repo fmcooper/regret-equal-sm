@@ -1,0 +1,26 @@
+Date: 2020/6/1  Time: 10:36:47
+
+// Regret Equal Stable Pair Algorithm stats
+
+matching: 2 10 4 1 6 3 8 7 9 5 
+profileMen: 5 1 1 1 0 0 1 0 1 0 
+profileWomen: 3 3 1 1 0 0 1 1 0 0 
+profileCombined: 8 4 2 2 0 0 2 1 1 0 
+costMen: 30
+costWomen: 31
+egalitarianCost: 61
+sexEqualityCost: 1
+menDegree: 9
+womenDegree: 8
+degree: 9
+regretEqualScore: 1
+balancedScore: 31
+sumRegret: 17
+
+
+Duration_ModCreation_ms: 94
+Duration_Alg_ms: 17
+Duration_Total_ms: 125
+
+exitCode 0
+code/stable_pair/Main_ReStablePairAlgorithm completed

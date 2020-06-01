@@ -1,0 +1,82 @@
+Date: 2020/6/1  Time: 10:36:44
+
+// All stable matching results
+numRotations: 1
+numStableMatchings: 2
+
+
+// Stable matchings
+
+optimal_stable_matchings: 
+rank-maximal_index: 0
+generous_index: 1
+sex_equal_index: 1
+egalitarian_index: 1
+generalisedMedian_index: 0
+balanced_index: 1
+minimumRegret_index: 1
+minimumSumRegret_index: 1
+regretEqual_index: 1
+regretEqualOptValue: 0
+
+stable_matching_list:
+9 1 10 3 7 4 8 2 5 6 
+9 1 10 3 7 4 5 2 8 6 
+
+
+matching_0: 9 1 10 3 7 4 8 2 5 6 
+profileMen_0: 2 4 2 1 1 0 0 0 0 0 
+profileWomen_0: 4 2 1 1 1 0 0 0 0 1 
+profileCombined_0: 6 6 3 2 2 0 0 0 0 1 
+costMen_0: 25
+costWomen_0: 30
+egalitarianCost_0: 55
+sexEqualityCost_0: 5
+menDegree_0: 5
+womenDegree_0: 10
+degree_0: 10
+regretEqualScore_0: 5
+balancedScore_0: 30
+sumRegret_0: 15
+
+ --- 
+matching_1: 9 1 10 3 7 4 5 2 8 6 
+profileMen_1: 2 3 2 2 1 0 0 0 0 0 
+profileWomen_1: 4 3 0 1 2 0 0 0 0 0 
+profileCombined_1: 6 6 2 3 3 0 0 0 0 0 
+costMen_1: 27
+costWomen_1: 24
+egalitarianCost_1: 51
+sexEqualityCost_1: 3
+menDegree_1: 5
+womenDegree_1: 5
+degree_1: 5
+regretEqualScore_1: 0
+balancedScore_1: 27
+sumRegret_1: 10
+
+ --- 
+
+
+// Rotations
+rotation_0: (7, 8)(9, 5)
+rotProfileMen_0: 0 -1 0 1 0 0 0 0 0 0 
+rotProfileWomen_0: 0 1 -1 0 1 0 0 0 0 -1 
+rotProfileCombined_0: 0 0 -1 1 1 0 0 0 0 -1 
+
+
+// Digraph 
+(0,0) 
+
+// Simple digraph 
+
+
+// Simple reverse digraph 
+
+
+Duration_ModCreation_ms: 83
+Duration_Alg_ms: 11
+Duration_Total_milliseconds: 105
+
+exitCode 0
+code/enumeration/Main_Enumerate
